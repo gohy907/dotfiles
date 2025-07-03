@@ -184,5 +184,5 @@ alias nzsh="nvim ~/.zshrc"
 alias rzsh="source ~/.zshrc"
 
 # === Exports ===
-export PATH=$PATH:$HOME/nvim-linux-x86_64/bin
-export PATH=$PATH:$HOME/zen.linux-x86_64/zen
+export PATH=$PATH:$HOME/nvim-linux-x86_64/bin/
+export PATH=$PATH:$HOME/zen.linux-x86_64/zen/
