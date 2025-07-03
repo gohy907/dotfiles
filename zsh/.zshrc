@@ -66,7 +66,6 @@ source ~/.oh-my-zsh/custom/themes/powerlevel10k/powerlevel10k.zsh-theme
 ___MY_VMOPTIONS_SHELL_FILE="${HOME}/.jetbrains.vmoptions.sh"; if [ -f "${___MY_VMOPTIONS_SHELL_FILE}" ]; then . "${___MY_VMOPTIONS_SHELL_FILE}"; fi
 export PATH=$PATH:$HOME/.local/bin
 export PATH="$HOME/.local/bin:$PATH"
-export PATH=$PATH:$HOME/nvim-linux-x86_64/bin
 
 # === FZF ===
 
@@ -183,3 +182,7 @@ alias docsp="docker stop"
 # === Edit this config ===
 alias nzsh="nvim ~/.zshrc"
 alias rzsh="source ~/.zshrc"
+
+# === Exports ===
+export PATH=$PATH:$HOME/nvim-linux-x86_64/bin
+export PATH=$PATH:$HOME/zen.linux-x86_64/zen
