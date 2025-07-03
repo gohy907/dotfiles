@@ -1,12 +1,12 @@
 #!/usr/bin/sh
 
 # Zsh
-sudo apt-get purge zsh
+sudo apt-get clean zsh
 rm ~/.zshrc
 rm -rf ~/.oh-my-zsh
 
 # Kitty
-sudo apt-get purge kitty
+sudo apt-get clean kitty
 rm -rf ~/.config/kitty 
 
 # Neovim
