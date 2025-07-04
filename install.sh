@@ -30,4 +30,5 @@ curl -L -o ~/Downloads/zen.linux-x86_64.tar.xz https://github.com/zen-browser/de
 mkdir ~/Downloads/zen.linux-x86_64 && tar -xf ~/Downloads/zen.linux-x86_64.tar.xz -C ~/Downloads/zen.linux-x86_64
 rm ~/Downloads/zen.linux-x86_64.tar.xz
 
+echo
 echo "Please, reboot your computer"
