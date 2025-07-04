@@ -41,4 +41,6 @@ echo "Manually add your SSH key to GitHub"
 echo "Your SSH key is:"
 cat ~/.ssh/id_ed25519.pub
 echo 
-echo "Please, reboot your computer"
+echo "Manually install font from fonts folder to terminal"
+echo
+echo "After that, please, reboot your computer"
