@@ -1,10 +1,10 @@
 #!/usr/bin/sh
 
 # Zsh
+sudo chsh -s /bin/bash $USER
 sudo apt-get clean zsh
 rm -f ~/.zsh*
 rm -rf ~/.oh-my-zsh
-sudo chsh -s /bin/bash $USER 
 
 # Kitty
 sudo apt-get clean kitty
