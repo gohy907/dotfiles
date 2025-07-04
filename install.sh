@@ -6,7 +6,6 @@ sudo chsh -s /bin/zsh $USER
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 cp zsh/.zshrc ~
 
-
 git clone https://github.com/zsh-users/zsh-autosuggestions "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-autosuggestions"
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting"
 git clone https://github.com/jeffreytse/zsh-vi-mode "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-vi-mode"
@@ -30,5 +29,16 @@ curl -L -o ~/Downloads/zen.linux-x86_64.tar.xz https://github.com/zen-browser/de
 mkdir ~/Downloads/zen.linux-x86_64 && tar -xf ~/Downloads/zen.linux-x86_64.tar.xz -C ~/Downloads/zen.linux-x86_64
 rm ~/Downloads/zen.linux-x86_64.tar.xz
 
+# Git
+git config --global user.name "gohy907"
+git config --global user.email "gohy2006@mail.ru"
+ssh-keygen -t ed25519 -C "gohy2006@mail.ru"
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519
+
 echo
+echo "Manually add your SSH key to GitHub"
+echo "Your SSH key is:"
+cat ~/.ssh/id_ed25519.pub
+echo 
 echo "Please, reboot your computer"
