@@ -18,6 +18,11 @@ cp -r kitty ~/.config
 gsettings set org.gnome.desktop.default-applications.terminal exec kitty
 gsettings set org.gnome.desktop.default-applications.terminal exec-arg -e
 
+# Font for kitty
+sudo mkdir /usr/share/fonts/myfonts 
+sudo cp ./fonts/JetBrainsMonoNerdFont-Regular.ttf /user/share/fonts/myfonts/
+sudo fc-cache -f -v
+
 # Neovim
 curl -L -o ~/Downloads/nvim-linux-x86_64.tar.gz https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x86_64.tar.gz
 mkdir ~/Downloads/nvim-linux-x86_64 && tar -xzvf ~/Downloads/nvim-linux-x86_64.tar.gz -C ~/Downloads/nvim-linux-x86_64
