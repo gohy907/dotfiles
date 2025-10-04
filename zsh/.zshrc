@@ -183,3 +183,4 @@ alias rzsh="source ~/.zshrc"
 # === Exports ===
 export PATH=$PATH:$HOME/Downloads/nvim-linux-x86_64/nvim-linux-x86_64/bin/
 export PATH=$PATH:$HOME/Downloads/zen.linux-x86_64/zen/
+export PATH=$PATH:$HOME/dotfiles/Utilites/ASM/
