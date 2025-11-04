@@ -1,0 +1,7 @@
+#!/bin/sh
+
+dir="$HOME/dotfiles/Utilites/ASM/."
+cp "$1" "$dir"
+file=$(basename "$1" .asm)
+
+dosbox -c "mount C $dir" -c "C:" -c "compile $file"
