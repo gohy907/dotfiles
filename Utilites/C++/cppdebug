@@ -1,0 +1,4 @@
+#!/bin/bash
+
+binary=$(echo "$1" | sed 's/\.cpp$//')
+g++ "$@" -o "$binary" -Wall -Werror -Wpedantic -Wextra -g
